@@ -1,0 +1,85 @@
+
+// Colors
+
+// Theme 1
+$theme-1-main-background: hsl(222, 26%, 31%);
+$theme-1-toggle-background: hsl(223, 31%, 20%);
+$theme-1-keypad-background: hsl(223, 31%, 20%);
+$theme-1-screen-background: hsl(224, 36%, 15%);
+
+$theme-1-key-background-buttons: hsl(225, 21%, 49%);
+$theme-1-key-background-buttons-hover: hsl(224, 51%, 76%);
+$theme-1-key-shadow-buttons: hsl(224, 28%, 35%);
+
+$theme-1-key-background-equals: hsl(6, 63%, 50%);
+$theme-1-key-background-equals-hover: hsl(6, 93%, 67%);
+$theme-1-key-shadow-equals: hsl(6, 70%, 34%);
+
+$theme-1-key-background-numbers: hsl(30, 25%, 89%);
+$theme-1-key-background-numbers-hover: hsl(177, 95%, 100%);
+$theme-1-key-shadow-numbers: hsl(28, 16%, 65%);
+
+$theme-1-text-blue: hsl(221, 14%, 31%);
+$theme-1-text-white: hsl(0, 0%, 100%);
+
+
+// Theme 2 
+$theme-2-main-background: hsl(0, 0%, 90%);
+$theme-2-toggle-background: hsl(0, 5%, 81%);
+$theme-2-keypad-background: hsl(0, 5%, 81%);
+$theme-2-screen-background: hsl(0, 0%, 93%);
+
+$theme-2-key-background-buttons: hsl(185, 42%, 37%);
+$theme-2-key-background-buttons-hover: hsl(185, 41%, 56%);
+$theme-2-key-shadow-buttons: hsl(185, 58%, 25%);
+
+$theme-2-key-background-equals: hsl(25, 98%, 40%);
+$theme-2-key-background-equals-hover: hsl(25, 100%, 61%);
+$theme-2-key-shadow-equals: hsl(25, 99%, 27%);
+
+$theme-2-key-background-numbers: hsl(45, 7%, 89%);
+$theme-2-key-background-numbers-hover: hsl(177, 95%, 100%);
+$theme-2-key-shadow-numbers: hsl(35, 11%, 61%);
+
+$theme-2-text-yellow: hsl(60, 10%, 19%);
+$theme-2-text-white: hsl(0, 0%, 100%);
+
+
+// Theme 3
+$theme-3-main-background: hsl(268, 75%, 9%);
+$theme-3-toggle-background: hsl(268, 71%, 12%);
+$theme-3-keypad-background: hsl(268, 71%, 12%);
+$theme-3-screen-background: hsl(268, 71%, 12%);
+
+$theme-3-key-background-buttons: hsl(281, 89%, 26%);
+$theme-3-key-background-buttons-hover: hsl(280, 56%, 44%);
+$theme-3-key-shadow-buttons: hsl(285, 91%, 52%);
+
+$theme-3-key-background-equals: hsl(176, 100%, 44%);
+$theme-3-key-background-equals-hover: hsl(177, 100%, 79%);
+$theme-3-key-shadow-equals: hsl(177, 92%, 70%);
+
+$theme-3-key-background-numbers: hsl(268, 47%, 21%);
+$theme-3-key-background-numbers-hover: hsl(267, 54%, 44%);
+$theme-3-key-shadow-numbers: hsl(290, 70%, 36%);
+
+$theme-3-text-yellow: hsl(52, 100%, 62%);
+$theme-3-text-blue: hsl(198, 20%, 13%);
+$theme-3-text-white: hsl(0, 0%, 100%);
+
+
+// Padding and Margin
+$xs: 5px;
+$sm: 10px;
+$md: 15px;
+$lg: 20px;
+$xlg: 35px;
+
+
+// Transition
+$transition: all .2s ease-in;
+
+
+// Font Weight
+$semiBold: 600;
+$extraBold: 800;

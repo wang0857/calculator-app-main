@@ -1,0 +1,324 @@
+@import './_variables.scss';
+
+.app-container {
+    width: 540px;
+    display: grid;
+    gap: 24px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    h1 {
+        font-size: 1em;
+    }
+}
+
+
+/* Input Range - Theme Range */
+.themeRange {
+    &-container {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+    }
+
+    &-label {
+        font-size: 10px;
+        margin-top: $sm;
+    }
+
+    &-range {
+        &-container {
+            width: 70px;
+            box-sizing: border-box;
+        }
+
+        &-options {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 11px;
+            margin-bottom: 2px;
+
+            span {
+                font-size: 12px;
+            }
+        }
+
+        &-input {
+            /* removing default appearance */
+            -webkit-appearance: none;
+            appearance: none; 
+            /* creating a custom design */
+            width: calc(100% - 10px);
+            cursor: pointer;
+            outline: none;
+            margin: 0px;
+            height: 26px;
+            border-radius: $md;
+            padding: 0px $xs;
+            background-color: $theme-1-toggle-background;
+
+            /* Pseudo class need to be seperated in Sass */
+            /* Thumb */
+            /* Chrome */
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                height: 17px;
+                width: 17px;
+                border-radius: 80px;
+                border: none;
+                background-color: $theme-1-key-background-equals;
+                background-position: center;
+                background-repeat: no-repeat;
+                transition: $transition;
+        
+                &:hover {
+                    background-color: lighten($theme-1-key-background-equals, 10%);
+                }
+            }
+
+            /* Firefox */
+            &::-moz-range-thumb {
+                height: 17px;
+                width: 17px;
+                border-radius: 80px;
+                border: none;
+                background-color: $theme-1-key-background-equals;
+                background-position: center;
+                background-repeat: no-repeat;
+                transition: $transition;
+        
+                &:hover {
+                    background-color: lighten($theme-1-key-background-equals, 10%);
+                }
+            }
+
+            /* Edge */
+            &::-ms-track {
+                -ms-appearance: none;
+                height: 17px;
+                width: 17px;
+                border-radius: 80px;
+                border: none;
+                background-color: $theme-1-key-background-equals;
+                background-position: center;
+                background-repeat: no-repeat;
+                transition: $transition;
+        
+                &:hover {
+                    background-color: lighten($theme-1-key-background-equals, 10%);
+                }
+            }
+
+            /* Theme colors */
+            &.theme-1 {
+                background-color: $theme-1-toggle-background;
+
+                /* Thumb */
+                /* Chrome */
+                &::-webkit-slider-thumb {
+                    background-color: $theme-1-key-background-equals;
+            
+                    &:hover {
+                        background-color: lighten($theme-1-key-background-equals, 10%);
+                    }
+                }
+
+                /* Firefox */
+                &::-moz-range-thumb {
+                    background-color: $theme-1-key-background-equals;
+            
+                    &:hover {
+                        background-color: lighten($theme-1-key-background-equals, 10%);
+                    }
+                }
+
+                /* Edge */
+                &::-ms-track {
+                    background-color: $theme-1-key-background-equals;
+            
+                    &:hover {
+                        background-color: lighten($theme-1-key-background-equals, 10%);
+                    }
+                }
+            }
+
+            &.theme-2 {
+                background-color: $theme-2-toggle-background;
+
+                /* Thumb */
+                /* Chrome */
+                &::-webkit-slider-thumb {
+                    background-color: $theme-2-key-background-equals;
+            
+                    &:hover {
+                        background-color: lighten($theme-2-key-background-equals, 10%);
+                    }
+                }
+
+                /* Firefox */
+                &::-moz-range-thumb {
+                    background-color: $theme-2-key-background-equals;
+            
+                    &:hover {
+                        background-color: lighten($theme-2-key-background-equals, 10%);
+                    }
+                }
+
+                /* Edge */
+                &::-ms-track {
+                    background-color: $theme-2-key-background-equals;
+            
+                    &:hover {
+                        background-color: lighten($theme-2-key-background-equals, 10%);
+                    }
+                }
+            }
+
+            &.theme-3 {
+                background-color: $theme-3-toggle-background;
+
+                /* Thumb */
+                /* Chrome */
+                &::-webkit-slider-thumb {
+                    background-color: $theme-3-key-background-equals;
+            
+                    &:hover {
+                        background-color: lighten($theme-3-key-background-equals, 10%);
+                    }
+                }
+
+                /* Firefox */
+                &::-moz-range-thumb {
+                    background-color: $theme-3-key-background-equals;
+            
+                    &:hover {
+                        background-color: lighten($theme-3-key-background-equals, 10%);
+                    }
+                }
+
+                /* Edge */
+                &::-ms-track {
+                    background-color: $theme-3-key-background-equals;
+            
+                    &:hover {
+                        background-color: lighten($theme-3-key-background-equals, 10%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Calculator */
+.calculator {
+    &-result {
+        background-color: $theme-1-screen-background;
+        width: 100%;
+        height: 128px;
+        border-radius: $sm;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding-right: $xlg;
+        overflow: hidden;
+        box-sizing: border-box;
+
+        /* Theme colors */
+        &.theme-1 {
+            background-color: $theme-1-screen-background;
+        }
+
+        &.theme-2 {
+            background-color: $theme-2-screen-background;
+        }
+
+        &.theme-3 {
+            background-color: $theme-3-screen-background;
+        }
+    }
+
+    &-keypad {
+        background-color: $theme-1-keypad-background;
+        border-radius: $sm;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 24px;
+        padding: 30px;
+
+        /* Theme colors */
+        &.theme-1 {
+            background-color: $theme-1-keypad-background;
+        }
+
+        &.theme-2 {
+            background-color: $theme-2-keypad-background;
+        }
+
+        &.theme-3 {
+            background-color: $theme-3-keypad-background;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .app-container {
+        width: 326px;
+    }
+
+    header {
+        h1 {
+            font-size: 24px;
+        }
+    }
+
+    .themeRange {
+        &-range {
+            &-options {
+                span {
+                    font-size: $sm;
+                }
+            }
+
+            &-input {
+                /* Thumb */
+                /* Chrome */
+                &::-webkit-slider-thumb {
+                    height: 16px;
+                    width: 16px;
+                }
+
+                /* Firefox */
+                &::-moz-range-thumb {
+                    height: 16px;
+                    width: 16px;
+                }
+
+                /* Edge */
+                &::-ms-track {
+                    height: 16px;
+                    width: 16px;
+                }
+            }
+        }
+    }
+
+    .calculator {
+        &-result {
+            height: 88px;
+            padding-right: 25px;
+            font-size: 28px;
+        }
+
+        &-keypad {
+            gap: 13px;
+            padding: 24px;
+        }
+    }
+}

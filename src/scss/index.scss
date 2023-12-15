@@ -1,0 +1,75 @@
+/* Overall Setting */
+@import './_variables.scss';
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+body {
+    background-color: $theme-1-main-background;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    transition: $transition;
+
+    & > * {
+        font-family: 'League Spartan', sans-serif;
+        font-size: 32px;
+        color: $theme-1-text-white;
+        transition: $transition;
+    }
+
+    &.theme-1 {
+        background-color: $theme-1-main-background;
+
+        & > * {
+            color: $theme-1-text-white;
+        }
+    }
+
+    &.theme-2 {
+        background-color: $theme-2-main-background;
+
+        & > * {
+            color: $theme-2-text-yellow;
+        }
+    }
+
+    &.theme-3 {
+        background-color: $theme-3-main-background;
+
+        & > * {
+            color: $theme-3-text-yellow;
+        }
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+}
+
+
+/* Preference Color Scheme */
+@media (prefers-color-scheme: light) {
+    body {    
+        background-color: $theme-2-main-background;
+
+        & > * {
+            color: $theme-2-text-yellow;
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {    
+        background-color: $theme-3-main-background;
+
+        & > * {
+            color: $theme-3-text-yellow;
+        }
+    }
+}
